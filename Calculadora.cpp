@@ -32,6 +32,16 @@ void multiplicacion(){
   cout << "Respuesta: " << a * b << endl;
 }
 
+void dividir(){
+  float a,b;
+  cout << "Ingrese dividendo: ";
+  cin >> a;
+  cout << "Ingrese divisor: ";
+  cin >> b;
+  cout << "El Resultado es: " << a / b << endl;
+}
+
+
 void sustraccion()
 {
   int a,b;
@@ -62,7 +72,9 @@ int main(){
     cout<<"2: Sustraccion"<<endl;
 
     cout << "3: Multiplicacion." << endl;
-
+    
+    cout << "4: Division. "<<endl;
+    
     cout<<"5: Logaritmo Natural"<<endl;
     
     cout<<"6: Logaritmo Base 10"<<endl;
