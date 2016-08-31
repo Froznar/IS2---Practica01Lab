@@ -9,7 +9,7 @@ void multiplicacion(){
     cin >> a;
     cout << "Ingrese el segundo factor: ";
     cin >> b;
-    cout << "Respuesta: " << a*b << endl;
+    cout << "Respuesta: " << a * b << endl;
 }
 
 int main(){
@@ -27,7 +27,7 @@ int main(){
         cout<<"Selecione un caso"<<endl;
         cin>>caso;
         //if(caso==0){breack;}
-        
+
         if(caso == 3)
             multiplicacion();
 
