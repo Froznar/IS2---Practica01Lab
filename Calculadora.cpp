@@ -17,7 +17,7 @@ int sumar()
 
 int main(){
 
-    int caso,a,b;
+    int caso;
 
     do{
 
@@ -28,7 +28,7 @@ int main(){
         cout<<"Seleccione un caso"<<endl;
         cin>>caso;
         //if(caso==0){breack;}
-	if(caso==1) cout<<"La suma es: "<<sumar(a,b)<<endl;
+	if(caso==1) cout<<"La suma es: "<<sumar()<<endl;
 
 
     }while(caso!=0);
