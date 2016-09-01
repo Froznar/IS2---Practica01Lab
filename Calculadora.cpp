@@ -13,6 +13,7 @@ void multiplicacion(){
     cout << "Ingrese el segundo factor: ";
     cin >> b;
     cout << "Respuesta: " << a * b << endl;
+}
 
 void sustraccion()
 {
@@ -40,9 +41,10 @@ int main(){
 
         cout<<endl;
         //cout<<"1: operacion x"<<endl;
-        cout << "3: Multiplicacion." << endl;
 
         cout<<"2: Sustraccion"<<endl;
+
+        cout << "3: Multiplicacion." << endl;
 
         cout<<"5: Logaritmo Natural"<<endl;
 
@@ -53,12 +55,13 @@ int main(){
         cin>>caso;
         //if(caso==0){breack;}
 
-        if(caso == 3)
-            multiplicacion();
-
         if(caso==2)
         {
             sustraccion();
+        }
+
+        if(caso == 3){
+            multiplicacion();
         }
 
         if(caso==5)
