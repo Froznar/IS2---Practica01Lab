@@ -1,6 +1,19 @@
 #include <iostream>
-#include <math.h>  
+#include <math.h>
 using namespace std;
+
+
+
+//operacion x(int a, int b)
+//{ colocar los "cin>>" requeridos  }
+void sustraccion()
+{
+    int a,b;
+    cout<<"ingrese los valores"<<endl;
+    cin>>a;
+    cin>>b;
+    cout<<" El Resultado es: "<<a-b<<endl;
+}
 
 void logNatural()
 {
@@ -11,6 +24,7 @@ void logNatural()
   cout<<" El Resultado es: "<< result<<endl;
 
 }
+
 int main(){
 
     int caso;
@@ -19,14 +33,37 @@ int main(){
 
         cout<<endl;
         //cout<<"1: operacion x"<<endl;
+
+        cout<<"2: Sustraccion"<<endl;
+
         cout<<"5: Logaritmo Natural"<<endl;
+
         cout<<"0: Salir"<<endl;
 
         cout<<"Selecione un caso"<<endl;
+        cout<<"------------------"<<endl;
         cin>>caso;
         //if(caso==0){breack;}
+
+        if(caso==2)
+        {
+            sustraccion();
+        }
+
         if(caso==5)
         {
             logNatural();
         }
-             
+
+
+
+    }while(caso!=0);
+
+    cout<<endl;
+    cout<<"Operacion terminada :)"<<endl;
+    return 0;
+}
+
+
+
+
