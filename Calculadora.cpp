@@ -67,6 +67,7 @@ int main(){
   do{
 
     cout<<endl;
+    cout<<"---------CALCULADORA---------"<<endl;
     cout<<"1: Adicion"<<endl;
 
     cout<<"2: Sustraccion"<<endl;
@@ -81,8 +82,9 @@ int main(){
     
     cout<<"0: Salir"<<endl;
 
+    cout<<"-----------------------------"<<endl;
     cout<<"Selecione un caso"<<endl;
-    cout<<"------------------"<<endl;
+    cout<<"-----------------------------"<<endl;
     cin>>caso;
     //if(caso==0){breack;}
 
@@ -98,9 +100,11 @@ int main(){
     if(caso == 3){
       multiplicacion();
     }
+
     if(caso == 4){
       dividir();
     }
+
     if(caso==5)
       {
 	logNatural();
