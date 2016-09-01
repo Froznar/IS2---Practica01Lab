@@ -1,11 +1,19 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
-
-
+//
 //operacion x(int a, int b)
-//{ colocar los "cin>>" requeridos  }
+//{coloca  los "cin>>" requeridos}
+
+void sumar()
+{
+    cout<<"Ingrese los valores:"<<endl;
+    cin>>a>>b;
+    cout<<"La suma es: "<<a+b<<endl;
+    return;
+}
+
+
 void multiplicacion(){
     int a, b;
     cout << "Ingrese el primer factor: ";
@@ -40,7 +48,7 @@ int main(){
     do{
 
         cout<<endl;
-        //cout<<"1: operacion x"<<endl;
+        cout<<"1: Adicion"<<endl;
 
         cout<<"2: Sustraccion"<<endl;
 
@@ -55,6 +63,10 @@ int main(){
         cin>>caso;
         //if(caso==0){breack;}
 
+	if(caso==1)
+	{
+	    sumar();
+	}
         if(caso==2)
         {
             sustraccion();
