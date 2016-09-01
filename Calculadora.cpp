@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>  
 using namespace std;
 
 //operacion x(int a, int b)
