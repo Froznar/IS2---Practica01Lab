@@ -1,5 +1,7 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
+
 
 
 //operacion x(int a, int b)
@@ -10,7 +12,17 @@ void sustraccion()
     cout<<"ingrese los valores"<<endl;
     cin>>a;
     cin>>b;
-    cout<<"resp: "<<a-b<<endl;
+    cout<<" El Resultado es: "<<a-b<<endl;
+}
+
+void logNatural()
+{
+  int logN;  int result;
+  cout<<" Ingrese el Numero  para hallar su Logaritmo Natural"<<endl;
+  cin>>logN;
+  result=log (logN);
+  cout<<" El Resultado es: "<< result<<endl;
+
 }
 
 int main(){
@@ -21,16 +33,27 @@ int main(){
 
         cout<<endl;
         //cout<<"1: operacion x"<<endl;
+
         cout<<"2: Sustraccion"<<endl;
+
+        cout<<"5: Logaritmo Natural"<<endl;
+
         cout<<"0: Salir"<<endl;
 
         cout<<"Selecione un caso"<<endl;
         cout<<"------------------"<<endl;
         cin>>caso;
         //if(caso==0){breack;}
-        if(caso==2){sustraccion();}
 
+        if(caso==2)
+        {
+            sustraccion();
+        }
 
+        if(caso==5)
+        {
+            logNatural();
+        }
 
 
 
@@ -40,3 +63,7 @@ int main(){
     cout<<"Operacion terminada :)"<<endl;
     return 0;
 }
+
+
+
+
