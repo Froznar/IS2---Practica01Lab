@@ -73,6 +73,15 @@ void logNatural()
   cout<<" El Resultado es: "<< result<<endl;
 }
 
+void cuadrada()
+{
+	double base;
+	float resultado;
+	cout<<"Ingrese la base:"<<endl;
+	cin>>base;
+	cout<<"El resultado es "<<pow(base,0.5);	
+}
+
 int main(){
   int caso;
 
@@ -93,6 +102,8 @@ int main(){
     cout<<"6: Logaritmo Base 10"<<endl;
     
     cout<<"7: Exponenciacion" <<endl;
+    
+    cout<<"8: Raiz Cuadrada"<<endl;
 
     cout<<"0: Salir"<<endl;
 
@@ -130,7 +141,9 @@ int main(){
     if(caso==7){
     	Exponenciacion();
     }
-
+    if(caso==8){
+	cuadrada();
+    }
   }while(caso!=0);
 
   cout<<endl;
