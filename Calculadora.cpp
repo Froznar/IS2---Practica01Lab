@@ -32,6 +32,16 @@ void multiplicacion(){
   cout << "Respuesta: " << a * b << endl;
 }
 
+void dividir(){
+  float a,b;
+  cout << "Ingrese dividendo: ";
+  cin >> a;
+  cout << "Ingrese divisor: ";
+  cin >> b;
+  cout << "El Resultado es: " << a / b << endl;
+}
+
+
 void sustraccion()
 {
   int a,b;
@@ -57,20 +67,24 @@ int main(){
   do{
 
     cout<<endl;
+    cout<<"---------CALCULADORA---------"<<endl;
     cout<<"1: Adicion"<<endl;
 
     cout<<"2: Sustraccion"<<endl;
 
-    cout << "3: Multiplicacion." << endl;
-
+    cout<<"3: Multiplicacion." << endl;
+    
+    cout<<"4: Division. "<<endl;
+    
     cout<<"5: Logaritmo Natural"<<endl;
     
     cout<<"6: Logaritmo Base 10"<<endl;
     
-      cout<<"0: Salir"<<endl;
+    cout<<"0: Salir"<<endl;
 
+    cout<<"-----------------------------"<<endl;
     cout<<"Selecione un caso"<<endl;
-    cout<<"------------------"<<endl;
+    cout<<"-----------------------------"<<endl;
     cin>>caso;
     //if(caso==0){breack;}
 
@@ -86,7 +100,11 @@ int main(){
     if(caso == 3){
       multiplicacion();
     }
-    
+
+    if(caso == 4){
+      dividir();
+    }
+
     if(caso==5)
       {
 	logNatural();
