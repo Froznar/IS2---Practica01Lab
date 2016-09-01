@@ -208,7 +208,7 @@ int main(){
                 cout<<"Que desea hacer?"<<endl;
                 cout<<"-----------------------------"<<endl;
                 cin>>operacion;
-                if(caso==1)
+                if(operacion==1)
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
