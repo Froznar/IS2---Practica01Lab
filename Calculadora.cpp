@@ -6,6 +6,15 @@ using namespace std;
 
 //operacion x(int a, int b)
 //{ colocar los "cin>>" requeridos  }
+void multiplicacion(){
+    int a, b;
+    cout << "Ingrese el primer factor: ";
+    cin >> a;
+    cout << "Ingrese el segundo factor: ";
+    cin >> b;
+    cout << "Respuesta: " << a * b << endl;
+}
+
 void sustraccion()
 {
     int a,b;
@@ -22,7 +31,6 @@ void logNatural()
   cin>>logN;
   result=log (logN);
   cout<<" El Resultado es: "<< result<<endl;
-
 }
 
 int main(){
@@ -36,6 +44,8 @@ int main(){
 
         cout<<"2: Sustraccion"<<endl;
 
+        cout << "3: Multiplicacion." << endl;
+
         cout<<"5: Logaritmo Natural"<<endl;
 
         cout<<"0: Salir"<<endl;
@@ -48,6 +58,10 @@ int main(){
         if(caso==2)
         {
             sustraccion();
+        }
+
+        if(caso == 3){
+            multiplicacion();
         }
 
         if(caso==5)
