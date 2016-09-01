@@ -1,9 +1,23 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-//
+
 //operacion x(int a, int b)
 //{coloca  los "cin>>" requeridos}
+
+///Esta exponenciacion es la mas simple con numeros cortos,
+///la funcion no es complicada es la mas basica.
+void Exponenciacion(){
+    int base,potencia;
+    cin>>base>>potencia;
+    int respuesta=1;
+    for (int i=1 ; i<=potencia; i++)
+    {
+        respuesta=respuesta*base;
+    }
+    cout<<"El resultado es: "<<respuesta<<endl;
+    return;
+}
 
 void sumar()
 {
@@ -13,7 +27,6 @@ void sumar()
   cout<<"La suma es: "<<a+b<<endl;
   return;
 }
-
 
 void logBase10(){
   double a,b;
@@ -61,7 +74,6 @@ void logNatural()
 }
 
 int main(){
-
   int caso;
 
   do{
@@ -80,6 +92,8 @@ int main(){
     
     cout<<"6: Logaritmo Base 10"<<endl;
     
+    cout<<"7: Exponenciacion" <<endl;
+
     cout<<"0: Salir"<<endl;
 
     cout<<"-----------------------------"<<endl;
@@ -113,7 +127,9 @@ int main(){
     if(caso==6){
       logBase10();
     }
-    
+    if(caso==7){
+    	Exponenciacion();
+    }
 
   }while(caso!=0);
 
