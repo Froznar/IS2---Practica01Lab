@@ -71,15 +71,15 @@ int main(){
 
     cout<<"2: Sustraccion"<<endl;
 
-    cout << "3: Multiplicacion." << endl;
+    cout<<"3: Multiplicacion." << endl;
     
-    cout << "4: Division. "<<endl;
+    cout<<"4: Division. "<<endl;
     
     cout<<"5: Logaritmo Natural"<<endl;
     
     cout<<"6: Logaritmo Base 10"<<endl;
     
-      cout<<"0: Salir"<<endl;
+    cout<<"0: Salir"<<endl;
 
     cout<<"Selecione un caso"<<endl;
     cout<<"------------------"<<endl;
@@ -98,7 +98,9 @@ int main(){
     if(caso == 3){
       multiplicacion();
     }
-    
+    if(caso == 4){
+      dividir();
+    }
     if(caso==5)
       {
 	logNatural();
