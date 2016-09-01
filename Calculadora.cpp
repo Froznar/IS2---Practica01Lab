@@ -144,7 +144,6 @@ int main(){
     if(caso==8){
 	cuadrada();
     }
-
   }while(caso!=0);
 
   cout<<endl;
