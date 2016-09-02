@@ -98,6 +98,10 @@ float Hipotenusa(float x, float y)
     //implementar
 }
 
+float Coseno(int adyacente)
+{
+
+}
 
 
 int main(){
@@ -212,6 +216,10 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
+		if(operacion==3)
+		{
+		   cout<<" El Coseno es : " Coseno(Y)<<endl;
+		}
             }while(operacion!=0);
         }
     }while(menu!=0);
