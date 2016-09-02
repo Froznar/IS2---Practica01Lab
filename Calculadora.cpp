@@ -95,7 +95,7 @@ void cuadrada()
 
 float Hipotenusa(float x, float y)
 {
-    //implementar
+    return sqrt(x*x+y*y);
 }
 
 
@@ -210,7 +210,7 @@ int main(){
                 cin>>operacion;
                 if(caso==1)
                 {
-                    cout<<" La respuesta es: "<<Hipotenusa(X,Y);
+                    cout<<" La respuesta es: "<<Hipotenusa(X,Y) << endl;
                 }
             }while(operacion!=0);
         }
