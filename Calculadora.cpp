@@ -181,7 +181,7 @@ int main(){
         if(menu==2)
         {
             do{
-                int a,X,Y;
+                float a,X,Y;
                 cout<<"-----OPERACIONES-TRIGONOMETRICAS-----"<<endl;
                 cout<<" "<<endl;
                 cout<<" | *                                    "<<endl;
