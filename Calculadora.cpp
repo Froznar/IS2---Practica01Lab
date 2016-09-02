@@ -98,9 +98,12 @@ float Hipotenusa(float x, float y)
     //implementar
 }
 
-float Coseno(int adyacente)
+float Coseno(int Copuesto,int Cadyacente)
 {
-
+    float Cos;
+    float Hipot=Hipotenusa(int Copuesto,int Cadyacente)
+    Cos=float(Cadyacente/Hipot);
+    return Cos;
 }
 
 
