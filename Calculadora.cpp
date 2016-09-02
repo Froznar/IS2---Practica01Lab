@@ -216,6 +216,10 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
+		if(operacion==7)
+		{
+		    cout<<"Cosec ( "<<a<<" )="<<Cosecante(X,Y);
+		}
             }while(operacion!=0);
         }
     }while(menu!=0);
