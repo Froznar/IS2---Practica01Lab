@@ -211,11 +211,10 @@ int main(){
                 cout<<"Que desea hacer?"<<endl;
                 cout<<"-----------------------------"<<endl;
                 cin>>operacion;
-                if(caso==1)
-                {
+                if(operacion == 1) {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
-                if(caso == 8){
+                if(operacion == 8){
                     cout << "La respuesta es: " << GradosToRadianes(a);
                 }
             }while(operacion!=0);
