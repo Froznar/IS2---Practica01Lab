@@ -205,7 +205,8 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
-                cout<<"0: Salir"<<endl;
+		cout<<"7: Cosec(a)"                
+		cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
                 cout<<"Que desea hacer?"<<endl;
