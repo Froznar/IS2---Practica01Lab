@@ -98,7 +98,10 @@ float Hipotenusa(float x, float y)
     //implementar
 }
 
-
+float Cotangente(float x, float y)
+{
+	return float(y/Hipotenusa(x,y));
+}
 
 int main(){
   int menu;
@@ -202,15 +205,20 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
+                cout<<"5: Cot(a)"<<endl;
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
                 cout<<"Que desea hacer?"<<endl;
                 cout<<"-----------------------------"<<endl;
                 cin>>operacion;
-                if(caso==1)
+                if(operacion==1)
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
+                }
+                if(operacion==5)
+                {
+                    cout<<" La respuesta es: "<<cout(a);
                 }
             }while(operacion!=0);
         }
