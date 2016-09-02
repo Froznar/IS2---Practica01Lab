@@ -95,7 +95,7 @@ void cuadrada()
 
 float Hipotenusa(float x, float y)
 {
-    //implementar
+    return sqrt(x*x+y*y);
 }
 
 float Secante(float x, float y)
@@ -185,7 +185,7 @@ int main(){
         if(menu==2)
         {
             do{
-                int a,X,Y;
+                float a,X,Y;
                 cout<<"-----OPERACIONES-TRIGONOMETRICAS-----"<<endl;
                 cout<<" "<<endl;
                 cout<<" | *                                    "<<endl;
@@ -202,8 +202,8 @@ int main(){
                 cin>>X;
                 cout<<"Ingrese el valor de Y:  ";
                 cin>>Y;
-                cout<<"-------Opciones-------";
-
+                cout<<"-------Opciones-------"<<endl;
+                cout<<endl;
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
                 cout<<"3: Sec(a)"<<endl;
@@ -212,15 +212,18 @@ int main(){
                 cout<<"-----------------------------"<<endl;
                 cout<<"Que desea hacer?"<<endl;
                 cout<<"-----------------------------"<<endl;
+                cout<<endl;
                 cin>>operacion;
+                cout<<endl;
                 if(operacion==1)
                 {
-                    cout<<" La respuesta es: "<<Hipotenusa(X,Y);
+                    cout<<" La respuesta es: "<<Hipotenusa(X,Y) << endl;
                 }
                 if(operacion==6)
                 {
                     cout<<" La respuesta es: "<<Secante(X,Y);
                 }
+                cout<<endl;
             }while(operacion!=0);
         }
     }while(menu!=0);
