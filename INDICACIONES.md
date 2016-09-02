@@ -19,5 +19,25 @@ los datos referenciales estaran comentados, de esta forma no habra conflictos.
 
 ########
 Parte 2
-En desarrollo
 
+Hola, ahora implementaremos funciones sobre un triangulo rectangulo, la dinamica es la misma, la unica diferencia es que quien deve implementar la función hipotenusa deve ser uno de los primeros en realizar el pull-request, de tal forma que podamos usar esa funcion para las demas. A continuación las tareas(usando random)
+
+1 Jonathan Alvarez = Hipotenusa 
+
+2 Ignacio Ventura = Seno
+
+3 Daniela Milón = Coseno
+
+4 Renzo Sucari = Tangente
+
+5 Paula Camargo = Cotangente
+
+6 Francisco Marin = Secante
+
+7 Vanesa Santillana = Cosecante
+
+8 Rodrigo Gutierrez = Transformar el angulo a radianes 
+
+todas las funciones deven retornar un "flotante".
+
+Bueno eso es todo(creo), suerte.
