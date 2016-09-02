@@ -100,6 +100,7 @@ float Hipotenusa(float x, float y)
 
 float Cosecante(float x,float y)
 {
+    
     return Hipotenusa(x,y)/x;
 }
 
@@ -219,7 +220,7 @@ int main(){
                 }
 		if(operacion==7)
 		{
-		    cout<<"Cosec ( "<<a<<" )="<<Cosecante(X,Y);
+		    cout<<"Cosec ( "<<a<<" )= "<<Cosecante(X,Y)<<endl;
 		}
             }while(operacion!=0);
         }
