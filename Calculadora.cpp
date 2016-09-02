@@ -210,6 +210,7 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
+		cout<<"3: Cos(a)<<endl;
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
@@ -222,7 +223,7 @@ int main(){
                 }
 		if(operacion==3)
 		{
-		   cout<<" El Coseno es : " Coseno(X,Y)<<endl;
+		   cout<<" El Coseno es : "<< Coseno(X,Y)<<endl;
 		}
             }while(operacion!=0);
         }
