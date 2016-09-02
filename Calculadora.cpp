@@ -220,7 +220,7 @@ int main(){
                 }
 		if(operacion==7)
 		{
-		    cout<<"Cosec ( "<<a<<" )= "<<Cosecante(X,Y)<<endl;
+		    cout<<" La respuesta es: "<<Cosecante(X,Y)<<endl;
 		}
             }while(operacion!=0);
         }
