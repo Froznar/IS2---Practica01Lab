@@ -97,7 +97,10 @@ float Hipotenusa(float x, float y)
 {
     //implementar
 }
-
+float Cosecante(float x,float y)
+{
+    return Hipotenusa(x,y)/x;
+}
 
 
 int main(){
