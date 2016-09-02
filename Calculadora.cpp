@@ -98,7 +98,10 @@ float Hipotenusa(float x, float y)
     //implementar
 }
 
-
+float Tangente(float a)
+{
+    return tan(a*3.14159/180);//hablamos la tangente de "a"
+}
 
 int main(){
   int menu;
@@ -117,7 +120,7 @@ int main(){
         cin>>menu;
         if(menu==1)
         {
-            do{
+           do{
 
             cout<<endl;
             cout<<"---------CALCULADORA---------"<<endl;
@@ -202,7 +205,8 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
-                cout<<"0: Salir"<<endl;
+                cout<<"4: Tan(a)"<<endl; //tangente de "a"
+		cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
                 cout<<"Que desea hacer?"<<endl;
@@ -212,6 +216,10 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
+		if(caso==4)
+		{
+		    cout<<" La respuesta es:"<<Tangente(a);
+		}
             }while(operacion!=0);
         }
     }while(menu!=0);
