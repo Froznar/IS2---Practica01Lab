@@ -215,6 +215,12 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
+
+		if(operacion==7)
+		{
+		    cout<<"La respuesta es: "<<Cosecante(X,Y);
+		}
+
             }while(operacion!=0);
         }
     }while(menu!=0);
