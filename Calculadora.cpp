@@ -185,7 +185,7 @@ int main(){
                 cout<<"-----OPERACIONES-TRIGONOMETRICAS-----"<<endl;
                 cout<<" "<<endl;
                 cout<<" | *                                    "<<endl;
-                cout<<" | * *            a -> angulo  °        "<<endl;
+                cout<<" | * *            a -> angulo  Â°        "<<endl;
                 cout<<" X *   *          X -> cateto opuesto   "<<endl;
                 cout<<" | *    a*        Y -> cateto adyacente "<<endl;
                 cout<<" | * * * * *                            "<<endl;
