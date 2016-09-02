@@ -221,7 +221,7 @@ int main(){
                 }
 		if(operacion==3)
 		{
-		   cout<<" El Coseno es : " Coseno(Y)<<endl;
+		   cout<<" El Coseno es : " Coseno(X,Y)<<endl;
 		}
             }while(operacion!=0);
         }
