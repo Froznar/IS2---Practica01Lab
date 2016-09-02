@@ -98,7 +98,9 @@ float Hipotenusa(float x, float y)
     //implementar
 }
 
-
+float GradosToRadianes(float a){
+    return a / 180 * 3.14159265;
+}
 
 int main(){
   int menu;
@@ -202,6 +204,7 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
+                cout << "8: Convertir grados a radianes" << endl;
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
@@ -211,6 +214,9 @@ int main(){
                 if(caso==1)
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
+                }
+                if(caso == 8){
+                    cout << "La respuesta es: " << GradosToRadianes(a);
                 }
             }while(operacion!=0);
         }
