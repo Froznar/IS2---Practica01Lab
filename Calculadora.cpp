@@ -99,6 +99,9 @@ float Hipotenusa(float x, float y)
 }
 
 
+float Seno(float x,float y){
+  return x/Hipotenusa(x,y);
+}
 
 int main(){
   int menu;
@@ -212,6 +215,10 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
+		if(caso==2){
+		  cout<<"El seno de "<<a<<" es "<<Seno(X,Y)<<endl;
+		}
+
             }while(operacion!=0);
         }
     }while(menu!=0);
