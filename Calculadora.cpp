@@ -88,7 +88,6 @@ void cuadrada()
 	cout<<"El resultado es "<<pow(base,0.5);
 }
 
-
 ///**********************************************
 ///*********OPERACIONES*TRIGONOMETRICAS**********
 ///**********************************************
@@ -98,9 +97,9 @@ float Hipotenusa(float x, float y)
     //implementar
 }
 
-float Tangente(float a)
+float Tangente(float x, float y)
 {
-    return tan(a*3.14159/180);//hablamos la tangente de "a"
+    return (x/y);//hablamos la tangente de "a"
 }
 
 int main(){
@@ -184,7 +183,7 @@ int main(){
         if(menu==2)
         {
             do{
-                int a,X,Y;
+                float a,X,Y;
                 cout<<"-----OPERACIONES-TRIGONOMETRICAS-----"<<endl;
                 cout<<" "<<endl;
                 cout<<" | *                                    "<<endl;
@@ -212,13 +211,13 @@ int main(){
                 cout<<"Que desea hacer?"<<endl;
                 cout<<"-----------------------------"<<endl;
                 cin>>operacion;
-                if(caso==1)
+                if(operacion==1)
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y);
                 }
-		if(caso==4)
+		if(operacion==4)
 		{
-		    cout<<" La respuesta es:"<<Tangente(a);
+		    cout<<" La respuesta es:"<<Tangente(X,Y);
 		}
             }while(operacion!=0);
         }
