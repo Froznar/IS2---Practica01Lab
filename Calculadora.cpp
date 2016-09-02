@@ -219,7 +219,7 @@ int main(){
 
 		if(operacion==7)
 		{
-		    cout<<"La Cosecante es: "<<Cosecante(X,Y)<<endl;
+		    cout<<"La Cosec(a) es: "<<Cosecante(X,Y)<<endl;
 		}
 
             }while(operacion!=0);
