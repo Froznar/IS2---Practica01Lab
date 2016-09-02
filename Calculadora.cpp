@@ -210,7 +210,7 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
-		cout<<"3: Cos(a)<<endl;
+		cout<<"3: Cos(a)"<<endl;//Cambios
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
