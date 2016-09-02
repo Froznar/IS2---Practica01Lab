@@ -100,9 +100,8 @@ float Hipotenusa(float x, float y)
 
 float Secante(float x, float y)
 {
-    float res=0;
+    float res=Hipotenusa(x,y)/y;
     return res;
-
 }
 
 int main(){
