@@ -218,7 +218,7 @@ int main(){
                 }
                 if(operacion==5)
                 {
-                    cout<<" La respuesta es: "<<cout(a);
+                    cout<<" La respuesta es: "<<Cotangente(X,Y)<<endl;
                 }
             }while(operacion!=0);
         }
