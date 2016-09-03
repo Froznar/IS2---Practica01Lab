@@ -88,7 +88,6 @@ void cuadrada()
 	cout<<"El resultado es "<<pow(base,0.5);
 }
 
-
 ///**********************************************
 ///*********OPERACIONES*TRIGONOMETRICAS**********
 ///**********************************************
@@ -96,6 +95,11 @@ void cuadrada()
 float Hipotenusa(float x, float y)
 {
     return sqrt(x*x+y*y);
+}
+
+float Tangente(float x, float y)
+{
+    return (x/y);//hablamos la tangente de "a"
 }
 
 float Cosecante(float x,float y)
@@ -144,7 +148,7 @@ int main(){
         cin>>menu;
         if(menu==1)
         {
-            do{
+           do{
 
             cout<<endl;
             cout<<"---------CALCULADORA---------"<<endl;
@@ -228,8 +232,9 @@ int main(){
                 cout<<"-------Opciones-------"<<endl;
                 cout<<endl;
                 cout<<"1: Saber la hipotenusa"<<endl;
-                cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu              
+                cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
                 cout<<"3: Cos(a)"<<endl;
+		cout<<"4: Tan(a)"<<endl; //tangente de "a"
                 cout<<"5: Cot(a)"<<endl;
                 cout<<"6: Sec(a)"<<endl;
 		cout<<"7: Cosec(a)"<<endl;
@@ -249,6 +254,9 @@ int main(){
                 {
                     cout<<" El Coseno es : "<< Coseno(X,Y)<<endl;
                 }
+		if(operacion==4){
+                    cout<<" La respuesta es:"<<Tangente(X,Y);
+		}
                 if(operacion==5)
                 {
                     cout<<" La respuesta es: "<<Cotangente(X,Y)<<endl;
