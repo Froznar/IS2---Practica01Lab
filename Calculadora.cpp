@@ -246,9 +246,10 @@ int main(){
                 }
                 if(operacion==5)
                 {
-                    cout<<" La respuesta es: "<<Cotangente(X,Y)<<endl;
+                    cout<<" La respuesta es: "<<Cotangente(X,Y);
                 }
-                if(operacion==6)
+		cout<<endl;
+		if(operacion==6)
                 {
 		  cout<<" La respuesta es: "<<Secante(X,Y)<<endl;
                 }
