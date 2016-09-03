@@ -101,6 +101,12 @@ float Tangente(float x, float y)
 {
     return (x/y);//hablamos la tangente de "a"
 }
+
+float Cosecante(float x,float y)
+{
+    return Hipotenusa(x,y)/x;
+}
+
 float GradosToRadianes(float a){
     return a / 180 * 3.14159265;
 }
@@ -227,10 +233,11 @@ int main(){
                 cout<<endl;
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
-                cout<<"4: Tan(a)"<<endl; //tangente de "a"
                 cout<<"3: Cos(a)"<<endl;
+		cout<<"4: Tan(a)"<<endl; //tangente de "a"
                 cout<<"5: Cot(a)"<<endl;
                 cout<<"6: Sec(a)"<<endl;
+		cout<<"7: Cosec(a)"<<endl;
                 cout << "8: Convertir grados a radianes" << endl;
                 cout<<"0: Salir"<<endl;
                 cout<<"-----------------------------"<<endl;
@@ -254,6 +261,12 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Cotangente(X,Y)<<endl;
                 }
+
+		if(operacion==7)
+		{
+		    cout<<"El Cosecante es: "<<Cosecante(X,Y)<<endl;
+		}
+
                 if(operacion==6)
                 {
                     cout<<" La respuesta es: "<<Secante(X,Y);
@@ -263,6 +276,7 @@ int main(){
                 }
 
                 cout<<endl;
+
             }while(operacion!=0);
         }
     }while(menu!=0);
