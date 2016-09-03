@@ -98,6 +98,10 @@ float Hipotenusa(float x, float y)
     return sqrt(x*x+y*y);
 }
 
+float GradosToRadianes(float a){
+    return a / 180 * 3.14159265;
+}
+
 float Cotangente(float x, float y)
 {
 	return float(y/Hipotenusa(x,y));
@@ -223,6 +227,7 @@ int main(){
                 cout<<"3: Cos(a)"<<endl;
                 cout<<"5: Cot(a)"<<endl;
                 cout<<"6: Sec(a)"<<endl;
+                cout << "8: Convertir grados a radianes" << endl;
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
@@ -230,7 +235,6 @@ int main(){
                 cout<<"-----------------------------"<<endl;
                 cout<<endl;
                 cin>>operacion;
-                cout<<endl;
 
                 if(operacion==1)
                 {
@@ -248,6 +252,10 @@ int main(){
                 {
                     cout<<" La respuesta es: "<<Secante(X,Y);
                 }
+                if(operacion == 8){
+                    cout << "La respuesta es: " << GradosToRadianes(a);
+                }
+
                 cout<<endl;
             }while(operacion!=0);
         }
