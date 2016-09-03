@@ -95,11 +95,31 @@ void cuadrada()
 
 float Hipotenusa(float x, float y)
 {
-    //implementar
+    return sqrt(x*x+y*y);
 }
 
 float GradosToRadianes(float a){
     return a / 180 * 3.14159265;
+}
+
+float Cotangente(float x, float y)
+{
+	return float(y/Hipotenusa(x,y));
+}
+
+float Coseno(int Copuesto,int Cadyacente)
+{
+    float Cos;
+    //Cambios
+    float Hipot=Hipotenusa(Copuesto, Cadyacente);
+    Cos=float(Cadyacente/Hipot);
+    return Cos;
+}
+
+float Secante(float x, float y)
+{
+    float res=Hipotenusa(x,y)/y;
+    return res;
 }
 
 int main(){
@@ -183,7 +203,7 @@ int main(){
         if(menu==2)
         {
             do{
-                int a,X,Y;
+                float a,X,Y;
                 cout<<"-----OPERACIONES-TRIGONOMETRICAS-----"<<endl;
                 cout<<" "<<endl;
                 cout<<" | *                                    "<<endl;
@@ -200,23 +220,43 @@ int main(){
                 cin>>X;
                 cout<<"Ingrese el valor de Y:  ";
                 cin>>Y;
-                cout<<"-------Opciones-------";
-
+                cout<<"-------Opciones-------"<<endl;
+                cout<<endl;
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
+                cout<<"3: Cos(a)"<<endl;
+                cout<<"5: Cot(a)"<<endl;
+                cout<<"6: Sec(a)"<<endl;
                 cout << "8: Convertir grados a radianes" << endl;
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
                 cout<<"Que desea hacer?"<<endl;
                 cout<<"-----------------------------"<<endl;
+                cout<<endl;
                 cin>>operacion;
-                if(operacion == 1) {
-                    cout<<" La respuesta es: "<<Hipotenusa(X,Y);
+
+                if(operacion==1)
+                {
+                    cout<<" La respuesta es: "<<Hipotenusa(X,Y) << endl;
+                }
+                if(operacion==3)
+                {
+                    cout<<" El Coseno es : "<< Coseno(X,Y)<<endl;
+                }
+                if(operacion==5)
+                {
+                    cout<<" La respuesta es: "<<Cotangente(X,Y)<<endl;
+                }
+                if(operacion==6)
+                {
+                    cout<<" La respuesta es: "<<Secante(X,Y);
                 }
                 if(operacion == 8){
                     cout << "La respuesta es: " << GradosToRadianes(a);
                 }
+
+                cout<<endl;
             }while(operacion!=0);
         }
     }while(menu!=0);
