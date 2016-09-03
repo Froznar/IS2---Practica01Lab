@@ -140,7 +140,7 @@ int main(){
         cout<<endl;
         cout<<"*************MENU*************"<<endl;
         cout<<"1: Calculadora"<<endl;
-        couti<<"2: Operaciones Trigonometricas"<<endl;
+        cout<<"2: Operaciones Trigonometricas"<<endl;
         cout<<"0: Salir"<<endl;
         cout<<"*****************************"<<endl;
         cout<<"Selecione una aplicacion"<<endl;
