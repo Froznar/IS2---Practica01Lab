@@ -205,7 +205,7 @@ int main(){
 
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
-		cout<<"7: Cosec(a)"                
+		cout<<"7: Cosec(a)"<<endl;                
 		cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
@@ -219,7 +219,7 @@ int main(){
 
 		if(operacion==7)
 		{
-		    cout<<"La Cosec(a) es: "<<Cosecante(X,Y)<<endl;
+		    cout<<"El Cosecante es: "<<Cosecante(X,Y)<<endl;
 		}
 
             }while(operacion!=0);
