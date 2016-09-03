@@ -101,7 +101,7 @@ float Hipotenusa(float x, float y)
 float Cosecante(float x,float y)
 {
     return Hipotenusa(x,y)/x;
-
+}
 
 float GradosToRadianes(float a){
     return a / 180 * 3.14159265;
