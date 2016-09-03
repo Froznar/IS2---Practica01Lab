@@ -118,6 +118,10 @@ float Secante(float x, float y)
     return res;
 }
 
+float Seno(float x,float y){
+  return x/Hipotenusa(x,y);
+}
+
 int main(){
   int menu;
   int caso;
@@ -246,9 +250,13 @@ int main(){
                 }
                 if(operacion==6)
                 {
-                    cout<<" La respuesta es: "<<Secante(X,Y);
+		  cout<<" La respuesta es: "<<Secante(X,Y)<<endl;
                 }
-                cout<<endl;
+		if(operacion==2)
+		  {
+		    cout<<"La respuesta es: "<<Seno(X,Y)<<endl;
+		  }
+
             }while(operacion!=0);
         }
     }while(menu!=0);
