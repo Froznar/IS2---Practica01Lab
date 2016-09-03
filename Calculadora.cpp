@@ -98,11 +98,22 @@ float Hipotenusa(float x, float y)
     return sqrt(x*x+y*y);
 }
 
+
+float Coseno(int Copuesto,int Cadyacente)
+{
+    float Cos;
+    //Cambios
+    float Hipot=Hipotenusa(Copuesto, Cadyacente)
+    Cos=float(Cadyacente/Hipot);
+    return Cos;
+}
+
 float Secante(float x, float y)
 {
     float res=Hipotenusa(x,y)/y;
     return res;
 }
+
 
 int main(){
   int menu;
@@ -206,7 +217,11 @@ int main(){
                 cout<<endl;
                 cout<<"1: Saber la hipotenusa"<<endl;
                 cout<<"2: Sen(a)"<<endl; //Ejemplo de definicion en el menu
+
+		cout<<"3: Cos(a)"<<endl;  
+
                 cout<<"3: Sec(a)"<<endl;
+
                 cout<<"0: Salir"<<endl;
 
                 cout<<"-----------------------------"<<endl;
@@ -214,20 +229,29 @@ int main(){
                 cout<<"-----------------------------"<<endl;
                 cout<<endl;
                 cin>>operacion;
+
+
                 cout<<endl;
+
                 if(operacion==1)
                 {
                     cout<<" La respuesta es: "<<Hipotenusa(X,Y) << endl;
                 }
-                if(operacion==6)
+
+		if(operacion==3)
+		{
+		   cout<<" El Coseno es : "<< Coseno(X,Y)<<endl;
+		}
+	        if(operacion==6)
                 {
                     cout<<" La respuesta es: "<<Secante(X,Y);
                 }
                 cout<<endl;
+
             }while(operacion!=0);
         }
     }while(menu!=0);
   cout<<endl;
   cout<<"Operacion terminada :)"<<endl;
   return 0;
-}
+} 
